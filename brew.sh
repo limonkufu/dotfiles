@@ -90,7 +90,7 @@ brew install terminal-notifier
 brew install thefuck
 brew install neovim
 brew install tldr
-
+brew install --cask raycast
 
 # Remove outdated versions from the cellar.
 brew cleanup
