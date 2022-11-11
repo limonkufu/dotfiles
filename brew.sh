@@ -30,6 +30,7 @@ brew install bash-completion@2
 # Note: don’t forget to add `/usr/local/bin/<EACHSHELL>` to `/etc/shells` before running `chsh`.
 brew install zsh
 brew install fish
+brew install fisher
 
 # Switch to using brew-installed bash as default shell
 #if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
@@ -90,7 +91,16 @@ brew install terminal-notifier
 brew install thefuck
 brew install neovim
 brew install tldr
+
 brew install --cask raycast
+brew install --cask discord
+brew install --cask iterm2
+brew install --cask slack
+brew install --cask spotify
+brew install --cask zoom
+brew install --cask steam
+brew install --cask telegram
+brew install --cask visual-studio-code
 
 # Remove outdated versions from the cellar.
 brew cleanup
