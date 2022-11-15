@@ -95,9 +95,7 @@ brew install tldr
 brew install --cask raycast
 brew install --cask discord
 brew install --cask iterm2
-brew install --cask slack
 brew install --cask spotify
-brew install --cask zoom
 brew install --cask steam
 brew install --cask telegram
 brew install --cask visual-studio-code
