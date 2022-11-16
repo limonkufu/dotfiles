@@ -1,0 +1,9 @@
+[commit]
+	gpgsign = true
+[user]
+	email = ugur.yilmaz@skao.int
+	name = Ugur Yilmaz
+[core]
+	editor = vim
+[gpg]
+	program = gpg

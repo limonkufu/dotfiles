@@ -52,3 +52,11 @@ else
     error "Failed setting up fish shell."
 fi
 
+# Install fisher
+info "Installing fisher and plugins"
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+cp fish_plugins $DESTINATION/fish_plugins
+fisher update
+
+info "Installing starship shell prompt"
+curl -sS https://starship.rs/install.sh | sh

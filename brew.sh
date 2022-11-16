@@ -86,7 +86,6 @@ brew install k9s
 brew install sshuttle
 brew install kubectx
 brew install kubecm
-brew install starship
 brew install terminal-notifier
 brew install thefuck
 brew install neovim
