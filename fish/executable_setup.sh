@@ -54,9 +54,12 @@ fi
 
 # Install fisher
 info "Installing fisher and plugins"
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+read -p "Install fisher with 'curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher' in a new terminal"
 cp fish_plugins $DESTINATION/fish_plugins
 fisher update
+
+sudo mkdir -p -m 775 /usr/local/bin
+# fish_add_path /usr/local/bin
 
 info "Installing starship shell prompt"
 curl -sS https://starship.rs/install.sh | sh

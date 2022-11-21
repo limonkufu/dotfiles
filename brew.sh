@@ -90,6 +90,9 @@ brew install terminal-notifier
 brew install thefuck
 brew install neovim
 brew install tldr
+brew install stats
+brew install gpg-suite
+
 
 brew install --cask raycast
 brew install --cask discord
