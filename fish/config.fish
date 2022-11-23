@@ -33,6 +33,8 @@ fnm env --use-on-cd | source
 # Starship prompt
 starship init fish | source
 
+# asdf
+source (brew --prefix asdf)/libexec/asdf.fish
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
