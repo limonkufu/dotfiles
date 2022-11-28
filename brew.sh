@@ -92,7 +92,7 @@ brew install neovim
 brew install tldr
 brew install stats
 brew install gpg-suite
-
+brew install colima
 
 brew install --cask raycast
 brew install --cask discord
