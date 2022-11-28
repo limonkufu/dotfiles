@@ -92,7 +92,13 @@ brew install neovim
 brew install tldr
 brew install stats
 brew install gpg-suite
+
+# Containers
+brew install docker
+brew install nerdctl
+brew install kubectl
 brew install colima
+brew install minikube
 
 brew install --cask raycast
 brew install --cask discord
