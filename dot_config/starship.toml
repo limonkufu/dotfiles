@@ -1,4 +1,5 @@
 right_format="""$kubernetes"""
+command_timeout = 1000
 
 [aws]
 symbol = "  "
