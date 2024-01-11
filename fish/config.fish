@@ -36,5 +36,9 @@ starship init fish | source
 # asdf
 source (brew --prefix asdf)/libexec/asdf.fish
 
-test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+# mise/rtx
+#echo local/bin/mise activate fish | source' >> ~/.config/fish/config.fish
+
+#
+#test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
