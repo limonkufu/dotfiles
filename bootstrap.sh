@@ -41,6 +41,7 @@ fi
 # Package control must be executed first in order for the rest to work
 ./packages/setup.sh
 
+# Install every other setup.sh in the folders
 find * -name "setup.sh" -not -wholename "packages*" | while read setup; do
     ./$setup
 done

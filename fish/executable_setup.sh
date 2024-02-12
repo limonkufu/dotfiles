@@ -10,15 +10,6 @@ DESTINATION="$(realpath -m ~/.config/fish)"
 
 info "Setting up fish shell..."
 
-substep_info "Creating fish config folders..."
-mkdir -p "$DESTINATION/functions"
-mkdir -p "$DESTINATION/completions"
-
-find * -name "*.fish" -o -name "fishfile" | while read fn; do
-    symlink "$SOURCE/$fn" "$DESTINATION/$fn"
-done
-clear_broken_symlinks "$DESTINATION"
-
 set_fish_shell() {
     if grep --quiet fish <<< "$SHELL"; then
         success "Fish shell is already set up."
@@ -58,8 +49,6 @@ read -p "Install fisher with 'curl -sL https://git.io/fisher | source && fisher 
 cp fish_plugins $DESTINATION/fish_plugins
 fisher update
 
-sudo mkdir -p -m 775 /usr/local/bin
-# fish_add_path /usr/local/bin
 
 info "Installing starship shell prompt"
 curl -sS https://starship.rs/install.sh | sh

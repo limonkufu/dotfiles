@@ -20,6 +20,9 @@
 
 1. Login to applications
 
-## Customisation
+## TODO
 
-TODO
+- [ ] Add more documentation on customisation
+- [ ] Setup fonts
+- [ ] Migrate to chezmoi's `run_` syntax instead of `setup.sh` files
+- [ ] (internal) Document this in PKB
