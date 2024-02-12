@@ -1,12 +1,11 @@
-Extensions installed on WSL: Ubuntu:
 aaron-bond.better-comments
 alexkrechik.cucumberautocomplete
 arcticicestudio.nord-visual-studio-code
 bat-snippets.bat-snippets
-batisteo.vscode-django
 bierner.markdown-mermaid
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
+coder.coder-remote
 codezombiech.gitignore
 codium.codium
 dart-code.dart-code
@@ -14,7 +13,6 @@ dart-code.flutter
 davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
 donjayamanne.githistory
-donjayamanne.python-environment-manager
 donjayamanne.python-extension-pack
 dotjoshjohnson.xml
 dracula-theme.theme-dracula
@@ -58,11 +56,17 @@ ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
-ms-vscode.cmake-tools
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode-remote.remote-wsl
+ms-vscode-remote.vscode-remote-extensionpack
 ms-vscode.cpptools
 ms-vscode.cpptools-extension-pack
 ms-vscode.cpptools-themes
 ms-vscode.makefile-tools
+ms-vscode.remote-explorer
+ms-vscode.remote-server
 ms-vscode.test-adapter-converter
 ms-vsliveshare.vsliveshare
 mushan.vscode-paste-image
@@ -79,8 +83,8 @@ robertrossmann.remedy
 sainnhe.gruvbox-material
 shuworks.vscode-table-formatter
 sidthesloth.html5-boilerplate
+techer.open-in-browser
 trond-snekvik.simple-rst
-twxs.cmake
 usernamehw.errorlens
 vincaslt.highlight-matching-tag
 visualstudioexptteam.intellicode-api-usage-examples
