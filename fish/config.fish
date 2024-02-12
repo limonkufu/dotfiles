@@ -33,11 +33,8 @@ fnm env --use-on-cd | source
 # Starship prompt
 starship init fish | source
 
-# asdf
-source (brew --prefix asdf)/libexec/asdf.fish
-
 # mise/rtx
-#echo local/bin/mise activate fish | source' >> ~/.config/fish/config.fish
+mise activate fish | source
 
 #
 #test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
