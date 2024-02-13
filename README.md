@@ -12,11 +12,26 @@
 1. Install [chezmoi](https://www.chezmoi.io/)
 
     ``` bash
-    sh -c "$(curl -fsLS get.chezmoi.io)"
+    sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin
     ```
+
+    > [!TIP]
+    > You Might need to run `export PATH=$HOME/.local/bin:$PATH` to add chezmoi to path
 
     > [!NOTE]
     > We are not using `--init` flag with chezmoi to have more control over the setup process
+
+1. Init chezmoi
+
+   ``` bash
+   chezmoi init git@github.com:limonkufu/dotfiles.git
+   ```
+
+1. Apply
+
+    ``` bash
+    chezmoi apply
+    ```
 
 1. Login to applications
 
