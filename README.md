@@ -3,13 +3,13 @@
 ## Usage
 
 1. Copy your SSH Keys
-1. Install Homebrew and git following official [docs](https://brew.sh/)
+2. Install Homebrew and git following official [docs](https://brew.sh/)
 
     ``` bash
     brew install git
     ```
 
-1. Install [chezmoi](https://www.chezmoi.io/)
+3. Install [chezmoi](https://www.chezmoi.io/)
 
     ``` bash
     sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin
@@ -21,19 +21,19 @@
 > [!NOTE]
 > We are not using `--init` flag with chezmoi to have more control over the setup process
 
-1. Init chezmoi
+4. Init chezmoi
 
    ``` bash
    chezmoi init git@github.com:limonkufu/dotfiles.git
    ```
 
-1. Apply
+5. Apply
 
     ``` bash
     chezmoi apply
     ```
 
-1. Login to applications
+6. Login to applications
 
 ## TODO
 
