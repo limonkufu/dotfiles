@@ -35,6 +35,15 @@
 
 6. Login to applications
 
+7. Run these manually for now for `WSL2`:
+
+``` bash
+fish_add_path $HOME/.local/bin/
+fish_add_path /home/linuxbrew/.linuxbrew/bin
+sudo apt update && sudo apt install locales
+sudo locale-gen en_GB.UTF-8
+```
+
 ## TODO
 
 - [ ] Add more documentation on customisation
