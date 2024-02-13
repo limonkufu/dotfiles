@@ -1,4 +1,4 @@
-#! /usr/bin/env sh
+#! /usr/bin/env bash
 
 DIR=$(dirname "$0")
 cd "$DIR"
@@ -36,6 +36,7 @@ info "Not running under WSL. Skipping WSL-specific setup."
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y software-properties-common
 fi
+{{ end }}
 {{ end }}
 
 # Package control must be executed first in order for the rest to work

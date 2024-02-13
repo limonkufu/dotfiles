@@ -4,6 +4,6 @@
 	email = ugur.yilmaz@skao.int
 	name = Ugur Yilmaz
 [core]
-	editor = vim
+	editor = nvim
 [gpg]
 	program = gpg

@@ -1,4 +1,4 @@
-#! /usr/bin/env sh
+#! /usr/bin/env bash
 
 symlink() {
     OVERWRITTEN=""
@@ -30,7 +30,7 @@ coloredEcho() {
     local exp="$1";
     local color="$2";
     local arrow="$3";
-    if ! [[ $color =~ '^[0-9]$' ]] ; then
+    if ! [[ $color =~ ^[0-9]$ ]] ; then
        case $(echo $color | tr '[:upper:]' '[:lower:]') in
         black) color=0 ;;
         red) color=1 ;;

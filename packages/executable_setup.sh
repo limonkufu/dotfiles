@@ -1,4 +1,4 @@
-#! /usr/bin/env sh
+#! /usr/bin/env bash
 
 DIR=$(dirname "$0")
 cd "$DIR"
@@ -10,7 +10,7 @@ COMMENT=\#*
 sudo -v
 
 info "Installing Brewfile packages..."
-brew bundle
+brew bundle --file=$HOME/Brewfile
 success "Finished installing Brewfile packages."
 
 find * -name "*.list" | while read fn; do
