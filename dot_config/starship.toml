@@ -47,16 +47,16 @@ disabled = false
 # "gke_.*_(?P<cluster>[\\w-]+)" = "gke-$cluster"
 
 [memory_usage]
-symbol = " "
+symbol = "󰍛 "
 
 [nim]
-symbol = " "
+symbol = " "
 
 [nix_shell]
 symbol = " "
 
 [package]
-symbol = " "
+symbol = " "
 
 [perl]
 symbol = " "

@@ -47,7 +47,7 @@ config.inactive_pane_hsb = {
   brightness = 0.6,
 }
 
-config.font_size = 16
+config.font_size = 14
 -- config.font = wezterm.font "JetBrainsMono Nerd Font Mono"
 config.adjust_window_size_when_changing_font_size = false
 
