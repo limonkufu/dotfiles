@@ -32,7 +32,7 @@ set -x -g PATH ~/bin ~/.local/bin $PATH
 starship init fish | source
 
 # mise/rtx
-mise activate fish | source
+mise activate --shims fish | source
 
 # Linux Brew
 
@@ -41,3 +41,6 @@ mise activate fish | source
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 {{ end }}
+
+string match -q "$TERM_PROGRAM" "vscode"
+and . (code --locate-shell-integration-path fish)cd 
