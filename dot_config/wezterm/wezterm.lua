@@ -47,9 +47,106 @@ config.inactive_pane_hsb = {
   brightness = 0.6,
 }
 
-config.font_size = 13
-config.font = wezterm.font "JetBrainsMono Nerd Font Mono"
+config.font_size = 14
+-- config.font = wezterm.font "JetBrainsMono Nerd Font Mono"
 config.adjust_window_size_when_changing_font_size = false
+
+config.wsl_domains = {
+  {
+    -- The name of this specific domain.  Must be unique amonst all types
+    -- of domain in the configuration file.
+    name = 'WSL:Ubuntu',
+
+    -- The name of the distribution.  This identifies the WSL distribution.
+    -- It must match a valid distribution from your `wsl -l -v` output in
+    -- order for the domain to be useful.
+    distribution = 'Ubuntu',
+
+    -- The username to use when spawning commands in the distribution.
+    -- If omitted, the default user for that distribution will be used.
+
+    -- username = "hunter",
+
+    -- The current working directory to use when spawning commands, if
+    -- the SpawnCommand doesn't otherwise specify the directory.
+
+    default_cwd = "/home/limonkufu/dev"
+
+    -- The default command to run, if the SpawnCommand doesn't otherwise
+    -- override it.  Note that you may prefer to use `chsh` to set the
+    -- default shell for your user inside WSL to avoid needing to
+    -- specify it here
+
+    -- default_prog = {"fish"}
+  },
+}
+
+config.font = wezterm.font('Operator Mono SSm Lig Medium')
+config.font_rules = {
+  -- For Bold-but-not-italic text, use this relatively bold font, and override
+  -- its color to a tomato-red color to make bold text really stand out.
+  {
+    intensity = 'Bold',
+    italic = false,
+    font = wezterm.font(
+      'Operator Mono SSm Lig', {
+      weight = 'Bold',
+      -- Override the color specified by the terminal output and force
+      -- it to be tomato-red.
+      -- The color value you set here can be any CSS color name or
+      -- RGB color string.
+      
+      foreground = 'tomato' }
+    ),
+  },
+
+  -- Bold-and-italic
+  {
+    intensity = 'Bold',
+    italic = true,
+    font = wezterm.font(
+      'Operator Mono SSm Lig', {
+      weight = 'Bold',
+      style = 'Italic'
+      }
+    )
+  },
+
+  -- normal-intensity-and-italic
+  {
+    intensity = 'Normal',
+    italic = true,
+    font = wezterm.font(
+      'Operator Mono SSm Lig', {
+      weight = 325,
+      style = 'Italic'
+      }
+    )
+  },
+
+  -- half-intensity-and-italic (half-bright or dim); use a lighter weight font
+  {
+    intensity = 'Half',
+    italic = true,
+    font = wezterm.font(
+      'Operator Mono SSm Lig', {
+      weight = 'Light',
+      style = 'Italic'
+      }
+    )
+  },
+
+  -- half-intensity-and-not-italic
+  {
+    intensity = 'Half',
+    italic = false,
+    font = wezterm.font(
+      'Operator Mono SSm Lig', {
+      weight = 'Light',
+      }
+    )
+  }
+}
 
 config.keys = {
   {
@@ -102,6 +199,7 @@ config.use_dead_keys = false
 config.scrollback_lines = 5000
 
 config.default_cwd = wezterm.home_dir .. '/dev'
+-- config.default_domain = 'WSL:Ubuntu'
 
 -- and finally, return the configuration to wezterm
 return config
