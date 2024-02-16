@@ -81,7 +81,7 @@ config.wsl_domains = {
   },
 }
 
-config.font = wezterm.font('Operator Mono SSm Lig Medium')
+config.font = wezterm.font('Operator Mono SSm Lig', { weight = 'DemiLight' } )
 config.font_rules = {
   -- For Bold-but-not-italic text, use this relatively bold font, and override
   -- its color to a tomato-red color to make bold text really stand out.
