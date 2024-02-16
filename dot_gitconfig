@@ -6,4 +6,4 @@
 [core]
 	editor = nvim
 [gpg]
-	program = gpg
+	program = /opt/homebrew/bin/gpg
