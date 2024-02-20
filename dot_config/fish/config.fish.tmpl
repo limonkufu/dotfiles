@@ -45,3 +45,4 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 string match -q "$TERM_PROGRAM" "vscode"
 and . (code --locate-shell-integration-path fish)cd 
 
+zoxide init fish | source
