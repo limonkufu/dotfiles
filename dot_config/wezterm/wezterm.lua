@@ -21,6 +21,8 @@ config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 -- config.window_decorations = "RESIZE"
 
+-- config.default_prog = { 'zellij', '-l', 'welcome' }
+
 config.visual_bell = {
   fade_in_function = 'EaseIn',
   fade_in_duration_ms = 150,
