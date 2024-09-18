@@ -45,7 +45,10 @@ and . (code --locate-shell-integration-path fish)cd
 zoxide init fish | source
 
 # Oh My Posh oh-my-posh init fish --config /opt/homebrew/opt/oh-my-posh/themes/night-owl.omp.json | source
-oh-my-posh init fish --config /Users/u.yilmaz/.config/zen.toml | source
+# oh-my-posh init fish --config /Users/u.yilmaz/.config/zen.toml | source
+
+# Starship
+starship init fish | source
 
 # Zellij
 eval (zellij setup --generate-auto-start fish | string collect)
