@@ -50,7 +50,7 @@ config.inactive_pane_hsb = {
 }
 
 config.font_size = 14
--- config.font = wezterm.font "JetBrainsMono Nerd Font Mono"
+config.font = wezterm.font "CaskaydiaCove Nerd Font"
 config.adjust_window_size_when_changing_font_size = false
 
 config.wsl_domains = {
@@ -81,73 +81,6 @@ config.wsl_domains = {
 
     -- default_prog = {"fish"}
   },
-}
-
-config.font = wezterm.font('Operator Mono SSm Lig', { weight = 'DemiLight' } )
-config.font_rules = {
-  -- For Bold-but-not-italic text, use this relatively bold font, and override
-  -- its color to a tomato-red color to make bold text really stand out.
-  {
-    intensity = 'Bold',
-    italic = false,
-    font = wezterm.font(
-      'Operator Mono SSm Lig', {
-      weight = 'Bold',
-      -- Override the color specified by the terminal output and force
-      -- it to be tomato-red.
-      -- The color value you set here can be any CSS color name or
-      -- RGB color string.
-      
-      foreground = 'tomato' }
-    ),
-  },
-
-  -- Bold-and-italic
-  {
-    intensity = 'Bold',
-    italic = true,
-    font = wezterm.font(
-      'Operator Mono SSm Lig', {
-      weight = 'Bold',
-      style = 'Italic'
-      }
-    )
-  },
-
-  -- normal-intensity-and-italic
-  {
-    intensity = 'Normal',
-    italic = true,
-    font = wezterm.font(
-      'Operator Mono SSm Lig', {
-      weight = 325,
-      style = 'Italic'
-      }
-    )
-  },
-
-  -- half-intensity-and-italic (half-bright or dim); use a lighter weight font
-  {
-    intensity = 'Half',
-    italic = true,
-    font = wezterm.font(
-      'Operator Mono SSm Lig', {
-      weight = 'Light',
-      style = 'Italic'
-      }
-    )
-  },
-
-  -- half-intensity-and-not-italic
-  {
-    intensity = 'Half',
-    italic = false,
-    font = wezterm.font(
-      'Operator Mono SSm Lig', {
-      weight = 'Light',
-      }
-    )
-  }
 }
 
 config.keys = {
