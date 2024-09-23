@@ -21,6 +21,9 @@ set -x -g MANPATH /opt/homebrew/opt/findutils/libexec/gnuman $MANPATH
 set -x -g PATH /opt/homebrew/opt/make/libexec/gnubin $PATH
 set -x -g MANPATH /opt/homebrew/opt/make/libexec/gnuman $MANPATH
 
+# Python
+set -x -g PATH (brew --prefix python)/libexec/bin
+
 # go bin folder
 set -x -g PATH ~/go/bin $PATH
 
