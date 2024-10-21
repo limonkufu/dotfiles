@@ -53,4 +53,10 @@ zoxide init fish | source
 starship init fish | source
 
 # Zellij
-eval (zellij setup --generate-auto-start fish | string collect)
+set -x -g ZELLIJ_AUTO_ATTACH true
+if set -q ZELLIJ
+else
+  zellij attach --create main
+end
+
+# eval (zellij setup --generate-auto-start fish | string collect)
