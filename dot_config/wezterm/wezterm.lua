@@ -22,6 +22,7 @@ config.tab_bar_at_bottom = true
 -- config.window_decorations = "RESIZE"
 
 -- config.default_prog = { 'zellij', '-l', 'welcome' }
+config.term = 'wezterm'
 
 config.visual_bell = {
   fade_in_function = 'EaseIn',
