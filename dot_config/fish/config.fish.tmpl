@@ -39,8 +39,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 {{ end }}
 
-string match -q "$TERM_PROGRAM" "vscode"
-and . (code --locate-shell-integration-path fish)cd 
 
 # Zoxide
 zoxide init fish | source
@@ -51,11 +49,15 @@ zoxide init fish | source
 # Starship
 starship init fish | source
 
-# Zellij
-set -x -g ZELLIJ_AUTO_ATTACH true
-if set -q ZELLIJ
-else
-  zellij attach --create main
-end
 
+if test "$TERM_PROGRAM" = "vscode" -o "$TERM_PROGRAM" = "cursor"
+    . (code --locate-shell-integration-path fish)cd
+else
+    # Zellij
+    set -x -g ZELLIJ_AUTO_ATTACH true
+    if set -q ZELLIJ
+    else
+        zellij attach --create main
+    end
 # eval (zellij setup --generate-auto-start fish | string collect)
+end
