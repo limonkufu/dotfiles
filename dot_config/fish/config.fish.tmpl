@@ -52,9 +52,11 @@ starship init fish | source
 # Atuin
 atuin init fish | source
 
+# Zellij
+export ZELLIJ_CONFIG_DIR=$HOME/.config/zellij
 if test "$TERM_PROGRAM" = "vscode" -o "$TERM_PROGRAM" = "cursor"
     . (code --locate-shell-integration-path fish)
-else
+else if test "$TERM" = "wezterm"
     # Zellij
     set -x -g ZELLIJ_AUTO_ATTACH true
     if set -q ZELLIJ
