@@ -97,7 +97,13 @@ keybinds clear-defaults=true {
     }
     // locked {}
     // tmux {}
-    // normal {}
+    normal {
+        bind "Super c" { Copy; }
+        bind "Super Alt Left" { GoToPreviousTab; }
+        bind "Super Alt Right" { GoToNextTab; }
+        bind "Super w" { CloseTab; }
+        bind "Super n" { NewTab; }
+    }
     shared_except "locked" {
         bind "Alt f" { ToggleFocusFullscreen; SwitchToMode "normal"; }
         bind "Alt w" { ToggleFloatingPanes; SwitchToMode "normal"; }
