@@ -57,12 +57,17 @@ export ZELLIJ_CONFIG_DIR=$HOME/.config/zellij
 if test "$TERM_PROGRAM" = "vscode" -o "$TERM_PROGRAM" = "cursor"
     . (code --locate-shell-integration-path fish)
 else if test "$TERM" = "wezterm" -o "$TERM" = "xterm-ghostty"
-    # Zellij
-    set -x -g ZELLIJ_AUTO_ATTACH true
-    if set -q ZELLIJ
-    else
-#        zellij attach --create main
-        eval (zellij setup --generate-auto-start fish | string collect)
+    set ZELLIJ_AUTO_ATTACH true
+    set ZELLIJ_AUTO_EXIT true
+    if not set -q ZELLIJ
+      if test "$ZELLIJ_AUTO_ATTACH" = "true"
+        zellij attach -c main
+      else
+        zellij
+      end
+      if test "$ZELLIJ_AUTO_EXIT" = "true"
+        kill $fish_pid
+      end
     end
 # eval (zellij setup --generate-auto-start fish | string collect)
 end
