@@ -52,6 +52,13 @@ starship init fish | source
 # Atuin
 atuin init fish | source
 
+echo 'switcher init fish | source' >> ~/.config/fish/config.fish
+
+# optionally use alias `s` instead of `kubeswitch` (add to config.fish)
+function s --wraps switcher
+        kubeswitch $argv;
+end
+
 # Zellij
 export ZELLIJ_CONFIG_DIR=$HOME/.config/zellij
 if test "$TERM_PROGRAM" = "vscode" -o "$TERM_PROGRAM" = "cursor"
