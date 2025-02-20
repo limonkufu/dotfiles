@@ -1,0 +1,306 @@
+after-startup-command = [
+    # JankyBorders has a built-in detection of already running process,
+    # so it won't be run twice on AeroSpace restart
+    'exec-and-forget borders active_color=0xffec7505 inactive_color=0xff494d64 width=6.0'
+]
+
+# Notify Sketchybar about workspace change
+exec-on-workspace-change = ['/bin/bash', '-c',
+ 'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+]
+
+# Start AeroSpace at login
+start-at-login = false
+
+# Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# See: https://nikitabobko.github.io/AeroSpace/guide#layouts
+# The 'accordion-padding' specifies the size of accordion padding
+# You can set 0 to disable the padding feature
+accordion-padding = 60
+
+# Possible values: tiles|accordion
+default-root-container-layout = 'tiles'
+
+# Possible values: horizontal|vertical|auto
+# 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
+#               tall monitor (anything higher than wide) gets vertical orientation
+default-root-container-orientation = 'auto'
+
+# Mouse follows focus when focused monitor changes
+# Drop it from your config, if you don't like this behavior
+# See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
+# See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
+# Fallback value (if you omit the key): on-focused-monitor-changed = []
+# on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+on-focus-changed = [
+#  'move-mouse window-lazy-center',
+ 'exec-and-forget /bin/bash -c /opt/homebrew/bin/sketchybar --trigger front_app_switched',
+ 'exec-and-forget sketchybar --trigger update_windows'
+]
+
+# You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
+# Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
+# Also see: https://nikitabobko.github.io/AeroSpace/goodness#disable-hide-app
+automatically-unhide-macos-hidden-apps = true
+
+
+[workspace-to-monitor-force-assignment]
+    # 1 = 1                            # Monitor sequence number from left to right. 1-based indexing
+    # 2 = 'main'                       # Main monitor
+    # 3 = 'secondary'                  # Non-main monitor in case when there are only two monitors
+    # 4 = 'built-in'                   # Case insensitive regex substring
+    # 5 = '^built-in retina display$'  # Case insensitive regex match
+    # 6 = ['secondary', 'dell']        # You can specify multiple patterns.
+    #                                  #   The first matching pattern will be used
+
+# Workspace List
+# 1 = main workspace on first monitor, for browser, vscode (can move) , terminal (can move)
+# 2 = main workspace on second monitor, for vscode (can move), terminal (can move)
+# #3 = not used due to #-£ conversion in Kara-biner (conflict with alt-3
+# 4 = second workspace on second monitor, for Slack, Email
+# 5 = second workspace on first monitor 
+# 9 = locked in for macbook retina display if used
+# Work setup: 1, 2(main), 3 (retina)
+# Home setup: 1(mirrored retina), 2(main)
+
+1 = 'main'
+2 = ['secondary', 'DELL S2721QS', 'DELL', 1] # 1 is always on the left to main monitor 
+4 = ['secondary', 'DELL S2721QS', 'DELL', 1]
+5 = 'main'
+9 = '^built-in retina display$'
+
+# Gaps between windows (inner-*) and between monitor edges (outer-*).
+# Possible values:
+# - Constant:     gaps.outer.top = 8
+# - Per monitor:  gaps.outer.top = [{ monitor.main = 16 }, { monitor."some-pattern" = 32 }, 24]
+#                 In this example, 24 is a default value when there is no match.
+#                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
+#                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
+[gaps]
+inner.horizontal = 20
+inner.vertical =   20
+outer.left =       20
+outer.right =      60
+#outer.bottom numbers have to match presentation.sh variables. built-in retina display is excluded from presentation mode, so this only works on external monitors.
+outer.bottom =        [{monitor.'^built-in retina display$' = 10 }, 20]
+outer.top =        [{monitor.'^built-in retina display$' = 5 }, 10]
+
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.systempreferences'
+# if.app-name-regex-substring = 'settings'
+# if.window-title-regex-substring = 'substring'
+# if.workspace = 'workspace-name'£
+# if.during-aerospace-startup = true
+# check-further-callbacks = true
+# run = ['layout floating', 'move-node-to-workspace S']  # The callback itself
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'telegram'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.raycast.macos'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'finder'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'safari'
+check-further-callbacks = true
+run = 'layout floating'
+ 
+[[on-window-detected]]
+if.app-name-regex-substring = 'camera'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'zoom'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'mail'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'trello'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Preview'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'discord'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Bitwarden'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+if.window-title-regex-substring = 'Picture-in-Picture'
+check-further-callbacks = true
+run = ['layout floating']
+
+# Workspace Placements
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+check-further-callbacks = true
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'vscode'
+check-further-callbacks = true
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'cursor'
+check-further-callbacks = true
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'obsidian'
+check-further-callbacks = true
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'slack'
+check-further-callbacks = true
+run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'outlook'
+check-further-callbacks = true
+run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'obsidian'
+check-further-callbacks = true
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'spotify'
+check-further-callbacks = true
+run = ['move-node-to-workspace 9']
+
+# Possible values: (qwerty|dvorak)
+# See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
+[key-mapping]
+preset = 'qwerty'
+
+
+# 'main' binding mode declaration
+# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
+# 'main' binding mode must be always presented
+# Fallback value (if you omit the key): mode.main.binding = {}
+[mode.main.binding]
+
+# All possible keys:
+# - Letters.        a, b, c, ..., z
+# - Numbers.        0, 1, 2, ..., 9
+# - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9
+# - F-keys.         f1, f2, ..., f20
+# - Special keys.   minus, equal, period, comma, slash, backslash, quote, semicolon, backtick,
+#                   leftSquareBracket, rightSquareBracket, space, enter, esc, backspace, tab
+# - Keypad special. keypadClear, keypadDecimalMark, keypadDivide, keypadEnter, keypadEqual,
+#                   keypadMinus, keypadMultiply, keypadPlus
+# - Arrows.         left, down, up, right
+
+# All possible modifiers: cmd, alt, ctrl, shift
+
+# All possible commands: https://nikitabobko.github.io/AeroSpace/commands
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
+# You can uncomment the following lines to open up terminal with alt + enter shortcut (like in i3)
+# alt-enter = '''exec-and-forget osascript -e '
+# tell application "Terminal"
+#     do script
+#     activate
+# end tell'
+# '''
+
+alt-shift-f = 'fullscreen --no-outer-gaps'
+alt-ctrl-f = 'layout floating tiling'
+
+# Using alt breaks down text selection so use cmd instead
+cmd-shift-left = 'join-with left'
+cmd-shift-down = 'join-with down'
+cmd-shift-up = 'join-with up'
+cmd-shift-right = 'join-with right'
+
+# Move to monitors same way as Rectangle/Raycast works
+# See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-monitor
+ctrl-alt-left = 'move-node-to-monitor --focus-follows-window --wrap-around left'
+ctrl-alt-down = 'move-node-to-monitor --focus-follows-window --wrap-around down'
+ctrl-alt-up = 'move-node-to-monitor --focus-follows-window --wrap-around up'
+ctrl-alt-right = 'move-node-to-monitor --focus-follows-window --wrap-around right'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#layout
+alt-slash = 'layout tiles horizontal vertical'
+alt-comma = 'layout accordion horizontal vertical'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#focus
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#move
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#resize
+alt-shift-minus = 'resize smart -50'
+alt-shift-equal = 'resize smart +50'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#workspace
+alt-1 = 'workspace 1 --auto-back-and-forth'
+alt-2 = 'workspace 2 --auto-back-and-forth'
+#alt-3 = 'workspace 3'
+alt-4 = 'workspace 4 --auto-back-and-forth'
+alt-5 = 'workspace 5 --auto-back-and-forth'
+alt-9 = 'workspace 9 --auto-back-and-forth'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+alt-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
+alt-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
+alt-shift-4 = 'move-node-to-workspace 4 --focus-follows-window'
+alt-shift-5 = 'move-node-to-workspace 5 --focus-follows-window'
+alt-shift-9 = 'move-node-to-workspace 9 --focus-follows-window'
+
+alt-tab = 'workspace --wrap-around next'
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#mode
+alt-shift-semicolon = 'mode service'
+alt-shift-enter = 'mode apps'
+
+# 'service' binding mode declaration.
+# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
+[mode.service.binding]
+esc = ['reload-config', 'mode main']
+alt-esc = ['enable toggle']
+r = ['flatten-workspace-tree', 'mode main'] # reset layout
+f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+backspace = ['close-all-windows-but-current', 'mode main']
+
+[mode.apps.binding]
+alt-w = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
