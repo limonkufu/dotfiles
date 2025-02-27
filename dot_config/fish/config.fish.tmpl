@@ -58,6 +58,7 @@ echo 'switcher init fish | source' >> ~/.config/fish/config.fish
 function s --wraps switcher
         kubeswitch $argv;
 end
+switcher init fish | source
 
 # Zellij
 export ZELLIJ_CONFIG_DIR=$HOME/.config/zellij
