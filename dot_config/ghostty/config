@@ -19,3 +19,12 @@ keybind = cmd+opt+right=unbind
 macos-option-as-alt = true
 
 shell-integration-features = sudo
+clipboard-trim-trailing-spaces = true
+
+working-directory = ~/dev
+quit-after-last-window-closed = true
+
+# Load custom shaders from dir using gttyc
+custom-shader-animation = true
+config-file = shaders
+
