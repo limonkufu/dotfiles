@@ -1,6 +1,13 @@
 keybinds clear-defaults=true {
     shared_except "locked" "normal" {
         bind "Ctrl c" "Ctrl d" " Enter" "Esc" "Space" "Backspace" { SwitchToMode "normal"; }
+        bind "Ctrl y" {
+        LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
+            floating true
+            ignore_case true
+            quick_jump true
+        }
+    }
     }
     pane {
         bind "h" "Left" { NewPane "Left"; SwitchToMode "normal"; }
