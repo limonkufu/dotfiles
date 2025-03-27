@@ -3,10 +3,12 @@
 [user]
 	email = ugur.yilmaz@skao.int
 	name = Ugur Yilmaz
+	signingkey = /Users/u.yilmaz/.ssh/id_codesign.pub
 [core]
 	editor = nvim
 [gpg]
 	program = /opt/homebrew/bin/gpg
+	format = ssh
 [credential "https://github.com"]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
