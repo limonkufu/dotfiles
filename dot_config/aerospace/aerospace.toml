@@ -153,16 +153,21 @@ check-further-callbacks = true
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'app.zen-browser.zen'
-if.window-title-regex-substring = 'Picture-in-Picture'
+if.app-name-regex-substring = 'Cisco Secure Client'
 check-further-callbacks = true
-run = ['layout floating']
+run = 'layout floating'
 
 # Workspace Placements
 [[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
 check-further-callbacks = true
 run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.window-title-regex-substring = 'Picture-in-Picture'
+if.app-id = 'app.zen-browser.zen'
+check-further-callbacks = true
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'vscode'
