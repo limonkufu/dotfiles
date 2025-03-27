@@ -57,6 +57,8 @@ function s --wraps switcher
         kubeswitch $argv;
 end
 
+jj util completion fish | source
+
 switcher init fish | source
 
 # Zellij
