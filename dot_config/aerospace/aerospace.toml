@@ -68,8 +68,8 @@ automatically-unhide-macos-hidden-apps = true
 # Home setup: 1(mirrored retina), 2(main)
 
 1 = 'main'
-2 = ['secondary', 'DELL S2721QS', 'DELL', 1] # 1 is always on the left to main monitor 
-4 = ['secondary', 'DELL S2721QS', 'DELL', 1]
+2 = ['DELL U3824DW', 'secondary', 'DELL S2721QS', 'DELL', 1] # 1 is always on the left to main monitor 
+4 = ['DELL U3824DW', 'secondary', 'DELL S2721QS', 'DELL', 1]
 5 = 'main'
 9 = '^built-in retina display$'
 
