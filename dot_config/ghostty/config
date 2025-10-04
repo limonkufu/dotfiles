@@ -1,4 +1,4 @@
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 font-family = "CaskaydiaCove Nerd Font Mono"
 font-size = 16
 
@@ -21,10 +21,12 @@ macos-option-as-alt = true
 shell-integration-features = sudo
 clipboard-trim-trailing-spaces = true
 
-working-directory = ~/dev
+working-directory = /Users/u.yilmaz/dev
+window-inherit-working-directory = false
 quit-after-last-window-closed = true
 
 # Load custom shaders from dir using gttyc
 custom-shader-animation = true
 config-file = shaders
 
+keybind = shift+enter=text:\n
