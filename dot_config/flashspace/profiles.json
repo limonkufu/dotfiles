@@ -1,0 +1,76 @@
+{
+  "profiles" : [
+    {
+      "id" : "69EBF76F-1F19-452B-9914-396A63CCC0DE",
+      "name" : "Default",
+      "workspaces" : [
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.mitchellh.ghostty",
+              "iconPath" : "/Applications/Ghostty.app/Contents/Resources/AppIcon.icns",
+              "name" : "Ghostty"
+            },
+            {
+              "bundleIdentifier" : "app.zen-browser.zen",
+              "iconPath" : "/Applications/Zen Browser.app/Contents/Resources/firefox.icns",
+              "name" : "Zen"
+            }
+          ],
+          "display" : "DELL U3824DW",
+          "id" : "B4C11459-9991-452F-A1F5-A54DC24E9FDE",
+          "name" : "Main",
+          "shortcut" : "opt+1"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.tinyspeck.slackmacgap",
+              "iconPath" : "/Applications/Slack.app/Contents/Resources/electron.icns",
+              "name" : "Slack"
+            },
+            {
+              "bundleIdentifier" : "com.microsoft.Outlook",
+              "iconPath" : "/Applications/Microsoft Outlook.app/Contents/Resources/Outlook.icns",
+              "name" : "Microsoft Outlook"
+            }
+          ],
+          "display" : "DELL U3824DW",
+          "id" : "F8D8CF10-5ED0-4EF5-A984-E7AD7952F394",
+          "name" : "Comms",
+          "shortcut" : "opt+2"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "ru.keepcoder.Telegram",
+              "iconPath" : "/Applications/Telegram.app/Contents/Resources/AppIcon.icns",
+              "name" : "Telegram"
+            }
+          ],
+          "display" : "Built-in Retina Display",
+          "id" : "F5F7B18B-B7B5-4453-917C-0EC88FDA07D5",
+          "name" : "Personal",
+          "shortcut" : "opt+6"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "md.obsidian",
+              "iconPath" : "/Applications/Obsidian.app/Contents/Resources/icon.icns",
+              "name" : "Obsidian"
+            },
+            {
+              "bundleIdentifier" : "us.zoom.xos",
+              "iconPath" : "/Applications/zoom.us.app/Contents/Resources/ZPLogo.icns",
+              "name" : "zoom.us"
+            }
+          ],
+          "display" : "DELL U3824DW",
+          "id" : "8E299E30-CB1C-4B92-B51F-B9088D2FCE52",
+          "name" : "Note Taking"
+        }
+      ]
+    }
+  ]
+}
