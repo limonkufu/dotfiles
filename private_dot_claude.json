@@ -1,0 +1,518 @@
+{
+  "numStartups": 41,
+  "hasSeenTasksHint": true,
+  "tipsHistory": {
+    "new-user-warmup": 7,
+    "plan-mode-for-complex-tasks": 38,
+    "memory-command": 31,
+    "theme-command": 41,
+    "status-line": 33,
+    "stickers-command": 41,
+    "prompt-queue": 7,
+    "enter-to-steer-in-relatime": 41,
+    "todo-list": 41,
+    "install-github-app": 41,
+    "install-slack-app": 32,
+    "drag-and-drop-images": 32,
+    "paste-images-mac": 32,
+    "double-esc-code-restore": 33,
+    "continue": 33,
+    "shift-tab": 33,
+    "image-paste": 22,
+    "config-thinking-mode": 23,
+    "ultrathink-keyword": 33,
+    "btw-side-question": 17,
+    "desktop-app": 32,
+    "web-app": 32,
+    "mobile-app": 32,
+    "shift-enter": 36,
+    "custom-agents": 37,
+    "permissions": 32,
+    "rename-conversation": 41,
+    "custom-commands": 41,
+    "frontend-design-plugin": 25
+  },
+  "promptQueueUseCount": 14,
+  "showExpandedTodos": true,
+  "cachedStatsigGates": {
+    "tengu_log_1p_events": true,
+    "tengu_disable_bypass_permissions_mode": false,
+    "code_slack_app_install_banner": false,
+    "tengu_tool_pear": false,
+    "tengu_thinkback": false,
+    "tengu_ant_attribution_header_new": true,
+    "tengu_prompt_suggestion": true,
+    "tengu_year_end_2025_campaign_promo": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_streaming_tool_execution2": false
+  },
+  "cachedDynamicConfigs": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    }
+  },
+  "cachedGrowthBookFeatures": {
+    "strawberry_granite_flag": "N/A",
+    "persimmon_marble_flag": "N/A",
+    "tengu_mcp_tool_search": true,
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_tool_pear": false,
+    "tengu_thinkback": false,
+    "tengu_sumi": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_react_vulnerability_warning": false,
+    "tengu_ant_attribution_header_new": true,
+    "tengu_accept_with_feedback": true,
+    "tengu_prompt_suggestion": true,
+    "tengu_tool_search_unsupported_models": null,
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu_pid_based_version_locking": true,
+    "tengu_event_sampling_config": {},
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    },
+    "tengu_permission_explainer": false,
+    "tengu_scratch": false,
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_post_compact_survey": false,
+    "tengu_streaming_tool_execution2": false,
+    "tengu_opus_default_pro_plan": false
+  },
+  "userID": "2aec5dd0ecc30e81f629c208b24b7318d8ef724f6d5c432e772d0a09cc6b149b",
+  "firstStartTime": "2025-12-18T23:39:10.257Z",
+  "sonnet45MigrationComplete": true,
+  "opus45MigrationComplete": true,
+  "thinkingMigrationComplete": true,
+  "changelogLastFetched": 1768338543529,
+  "githubRepoPaths": {
+    "limonkufu/lumoswellbeing-finance-and-scheduling-app": [
+      "/Users/u.yilmaz/dev/personal/lumoswellbeing-finance-and-scheduling-app.worktrees/worktree-2026-01-02T14-38-04",
+      "/Users/u.yilmaz/dev/personal/lumoswellbeing-finance-and-scheduling-app"
+    ],
+    "limonkufu/gradient-gcal-event-merge": [
+      "/Users/u.yilmaz/dev/personal/gradient-gcal-event-merge"
+    ]
+  },
+  "claudeCodeFirstTokenDate": "2025-07-24T13:58:46.042331Z",
+  "shiftEnterKeyBindingInstalled": true,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.0.75",
+  "projects": {
+    "/Users/u.yilmaz/dev/personal/lumoswellbeing-finance-and-scheduling-app": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "exampleFiles": [
+        "types.ts",
+        "scheduling-view.tsx",
+        "finance-view.tsx",
+        "preferences-service.ts",
+        "session-service.ts"
+      ],
+      "exampleFilesGeneratedAt": 1767791981650,
+      "lastCost": 0.141688,
+      "lastAPIDuration": 11024,
+      "lastAPIDurationWithoutRetries": 11023,
+      "lastToolDuration": 0,
+      "lastDuration": 137635,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 9,
+      "lastTotalOutputTokens": 312,
+      "lastTotalCacheCreationInputTokens": 32428,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 6,
+          "outputTokens": 114,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 19456,
+          "webSearchRequests": 0,
+          "costUSD": 0.12448000000000001
+        },
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 3,
+          "outputTokens": 198,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 12972,
+          "webSearchRequests": 0,
+          "costUSD": 0.017208
+        }
+      },
+      "lastSessionId": "74f032ae-5275-40a2-84d3-beb52baa7e2c",
+      "reactVulnerabilityWarningCount": 2,
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/u.yilmaz/dev/personal/lumoswellbeing-finance-and-scheduling-app.worktrees/worktree-2026-01-02T14-38-04": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "exampleFiles": [
+        "scheduling-view.tsx",
+        "finance-view.tsx",
+        "session-calendar.tsx",
+        "data-store.ts",
+        "invoice-service.ts"
+      ],
+      "exampleFilesGeneratedAt": 1767367842822,
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/u.yilmaz/dev/personal/copy-current-url": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      }
+    },
+    "/Users/u.yilmaz/dev/personal/gradient-gcal-event-merge": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.5698036499999999,
+      "lastAPIDuration": 231177,
+      "lastAPIDurationWithoutRetries": 220505,
+      "lastToolDuration": 71451,
+      "lastDuration": 136945,
+      "lastLinesAdded": 103,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 16956,
+      "lastTotalOutputTokens": 17247,
+      "lastTotalCacheCreationInputTokens": 57075,
+      "lastTotalCacheReadInputTokens": 298591,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 15939,
+          "outputTokens": 5437,
+          "cacheReadInputTokens": 259224,
+          "cacheCreationInputTokens": 35196,
+          "webSearchRequests": 0,
+          "costUSD": 0.1130414
+        },
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 1017,
+          "outputTokens": 11810,
+          "cacheReadInputTokens": 39367,
+          "cacheCreationInputTokens": 21879,
+          "webSearchRequests": 0,
+          "costUSD": 0.45676225
+        }
+      },
+      "lastSessionId": "2f31b317-b1b5-4402-aee3-243358893408"
+    },
+    "/Users/u.yilmaz/dev/work/ska-cicd-deploy-minikube": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.11866550000000001,
+      "lastAPIDuration": 24729,
+      "lastAPIDurationWithoutRetries": 18395,
+      "lastToolDuration": 0,
+      "lastDuration": 24371,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 4148,
+      "lastTotalOutputTokens": 633,
+      "lastTotalCacheCreationInputTokens": 21318,
+      "lastTotalCacheReadInputTokens": 10540,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 208,
+          "outputTokens": 173,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 10423,
+          "webSearchRequests": 0,
+          "costUSD": 0.01410175
+        },
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 3940,
+          "outputTokens": 460,
+          "cacheReadInputTokens": 10540,
+          "cacheCreationInputTokens": 10895,
+          "webSearchRequests": 0,
+          "costUSD": 0.10456375000000001
+        }
+      },
+      "lastSessionId": "50368ff9-cfbf-41db-b2f7-1dc6eb12e516"
+    },
+    "/Users/u.yilmaz/dev/work/ska-ser-infra-machinery": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 0.6900007999999997,
+      "lastAPIDuration": 169911,
+      "lastAPIDurationWithoutRetries": 169897,
+      "lastToolDuration": 98594,
+      "lastDuration": 4961972,
+      "lastLinesAdded": 149,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 45839,
+      "lastTotalOutputTokens": 11205,
+      "lastTotalCacheCreationInputTokens": 110448,
+      "lastTotalCacheReadInputTokens": 486443,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 38629,
+          "outputTokens": 8680,
+          "cacheReadInputTokens": 327463,
+          "cacheCreationInputTokens": 51016,
+          "webSearchRequests": 0,
+          "costUSD": 0.17854530000000002
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 6,
+          "outputTokens": 234,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 14523,
+          "webSearchRequests": 0,
+          "costUSD": 0.05798925
+        },
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 7204,
+          "outputTokens": 2291,
+          "cacheReadInputTokens": 158980,
+          "cacheCreationInputTokens": 44909,
+          "webSearchRequests": 0,
+          "costUSD": 0.45346624999999996
+        }
+      },
+      "lastSessionId": "c1078587-2e0c-4422-9c77-4951a6c3c2b5"
+    },
+    "/Users/u.yilmaz/dev/worktrees/work/ska-ser-infra-machinery/claude-indigo-iam": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.000803,
+      "lastAPIDuration": 1419,
+      "lastAPIDurationWithoutRetries": 1419,
+      "lastToolDuration": 0,
+      "lastDuration": 12424,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 648,
+      "lastTotalOutputTokens": 31,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 648,
+          "outputTokens": 31,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.000803
+        }
+      },
+      "lastSessionId": "b9469959-e1ce-4d0c-b93a-b37511362dc4"
+    },
+    "/Users/u.yilmaz/dev/work/ska-ser-bar-backend": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "exampleFiles": [
+        "app.py",
+        "binary.py",
+        "oras.py",
+        "utils.py",
+        "test_app.py"
+      ],
+      "exampleFilesGeneratedAt": 1768300700400,
+      "lastCost": 0.28439625,
+      "lastAPIDuration": 17500,
+      "lastAPIDurationWithoutRetries": 17499,
+      "lastToolDuration": 0,
+      "lastDuration": 30136,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 333,
+      "lastTotalOutputTokens": 797,
+      "lastTotalCacheCreationInputTokens": 51701,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 325,
+          "outputTokens": 248,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 10813,
+          "webSearchRequests": 0,
+          "costUSD": 0.015081250000000001
+        },
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 8,
+          "outputTokens": 549,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 40888,
+          "webSearchRequests": 0,
+          "costUSD": 0.26931499999999997
+        }
+      },
+      "lastSessionId": "c2564132-b0d1-42d6-ab5c-7bf71f265252"
+    }
+  },
+  "lastReleaseNotesSeen": "2.1.6",
+  "hasShownOpus45Notice": {
+    "3dff5a83-1865-4faa-bd1e-22bb049e9d59": true
+  },
+  "s1mAccessCache": {
+    "3dff5a83-1865-4faa-bd1e-22bb049e9d59": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1768385494663
+    }
+  },
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "claudeInChromeDefaultEnabled": false,
+  "hasCompletedClaudeInChromeOnboarding": true,
+  "feedbackSurveyState": {
+    "lastShownTime": 1767962872095
+  },
+  "hasIdeAutoConnectDialogBeenShown": true,
+  "oauthAccount": {
+    "accountUuid": "b93fcaf5-fc5a-4143-93e9-0f0d90d10c28",
+    "emailAddress": "u.yilmaz91@gmail.com",
+    "organizationUuid": "3dff5a83-1865-4faa-bd1e-22bb049e9d59",
+    "hasExtraUsageEnabled": false,
+    "displayName": "Ugur",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "Ugur"
+  },
+  "anonymousId": "claudecode.v1.bfed3e98-7108-4aeb-a89e-50eb4e6536d7",
+  "groveConfigCache": {
+    "b93fcaf5-fc5a-4143-93e9-0f0d90d10c28": {
+      "grove_enabled": true,
+      "timestamp": 1768338542304
+    }
+  },
+  "skillUsage": {
+    "init": {
+      "usageCount": 1,
+      "lastUsedAt": 1767958032230
+    },
+    "code-review:code-review": {
+      "usageCount": 1,
+      "lastUsedAt": 1768300712373
+    }
+  }
+}

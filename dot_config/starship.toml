@@ -167,7 +167,9 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 [python]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) (\($virtualenv\)) ](fg:base bg:teal)]($style)'
+# Only use the `python3` binary to get the version.
+python_binary = 'python3'
 
 [docker_context]
 symbol = ""

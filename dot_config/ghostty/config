@@ -1,11 +1,13 @@
 theme = Catppuccin Mocha
 font-family = "CaskaydiaCove Nerd Font Mono"
+# font-family = "DepartureMono Nerd Font Mono"
 font-size = 16
 
 background-blur-radius = 20
 window-decoration = true
 window-padding-x = 8
 window-padding-y = 8
+split-divider-color = #CC5500
 
 macos-titlebar-style = transparent
 
@@ -21,7 +23,7 @@ macos-option-as-alt = true
 shell-integration-features = sudo
 clipboard-trim-trailing-spaces = true
 
-working-directory = /Users/u.yilmaz/dev
+working-directory = /Users/u.yilmaz/dev/
 window-inherit-working-directory = false
 quit-after-last-window-closed = true
 
